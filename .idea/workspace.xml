@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/base/SparkSessionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/AutoBroadcastJoinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.orc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/AutoBroadcastJoinScalaExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/TextFilesExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.1/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.1/src/main/java/com/spark/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.1/src/test/java/com/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.1/src/test/java/com/spark/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/test/java/com/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/test/java/com/spark/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.SparkSessionExample.executor": "Run",
+    "Application.TextFilesExample.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.spark-3.5.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -92,7 +78,7 @@
       <recent name="com.spark.example.sql.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SparkSessionExample">
+  <component name="RunManager" selected="Application.TextFilesExample">
     <configuration name="SparkSessionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.base.SparkSessionExample" />
@@ -100,6 +86,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.spark.example.sql.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextFilesExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.TextFilesExample" />
+      <module name="spark-example-3.5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.example.sql.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +144,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.TextFilesExample" />
       <item itemvalue="Application.SparkSessionExample" />
       <item itemvalue="Maven.spark-3.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextFilesExample" />
         <item itemvalue="Application.SparkSessionExample" />
       </list>
     </recent_temporary>

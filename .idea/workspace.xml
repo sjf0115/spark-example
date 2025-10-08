@@ -1,9 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectId" id="33mbbC6dSxMXymIf673AnIBIB5K" />
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
-  }
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/base/SparkSessionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/AutoBroadcastJoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/people2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.orc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/users.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/AutoBroadcastJoinScalaExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.1/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.1/src/main/java/com/spark/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.1/src/test/java/com/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.1/src/test/java/com/spark/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/test/java/com/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/test/java/com/spark/example/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="/opt/workspace/maven" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="/opt/workspace/apache-maven-3.5.4/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
 }</component>
+  <component name="ProjectId" id="33mbbC6dSxMXymIf673AnIBIB5K" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SparkSessionExample.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.spark-3.5.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/smartsi/学习/Code/spark-example/spark-example-3.5/src/main",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spark-example-3.5/src/main" />
+      <recent name="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.spark.example.sql" />
+      <recent name="com.spark.example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.example.sql.base" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SparkSessionExample">
+    <configuration name="SparkSessionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.base.SparkSessionExample" />
+      <module name="spark-example-3.5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.example.sql.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spark-3.5" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="-Dmaven.test.skip=true" />
+                <option value="-pl" />
+                <option value=":spark-example-3.5" />
+                <option value="-am" />
+                <option value="-Dautoconfig.skip" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.SparkSessionExample" />
+      <item itemvalue="Maven.spark-3.5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SparkSessionExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="" />
+      <created>1759925263422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759925263422</updated>
+    </task>
+    <servers />
+  </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example;
+package com.spark.example;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -29,7 +29,7 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigourous com.spark.example.sql.Test :-)
      */
     public void testApp()
     {

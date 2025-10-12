@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/base/dataframe/SeqToDFByCreateDataFrameScalaExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/table/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/table/join/strategy/BroadcastHashJoinExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/base/SeqToDataFrameScalaExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/base/dataframe/SeqToDFByToDFScalaExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/AutoBroadcastJoinScalaExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/table/join/AutoBroadcastJoinScalaExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/types/InnerJoinScalaExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/table/join/types/InnerJoinScalaExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/strategy/AutoBroadcastJoinExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/table/join/strategy/ShuffleSortMergeJoinExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/types/InnerJoinExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/table/join/AutoBroadcastJoinScalaExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/table/package.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AutoBroadcastJoinExample.executor": "Run",
+    "Application.BroadCastJoinExample.executor": "Run",
     "Application.HiveDataSetExample.executor": "Run",
     "Application.HiveExample.executor": "Run",
     "Application.HiveInsertExample.executor": "Run",
@@ -94,32 +96,19 @@
       <recent name="com.spark.example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.example.table.join.strategy" />
       <recent name="com.spark.example.sql.base" />
       <recent name="com.spark.example.sql.source" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InnerJoinScalaExample">
-    <configuration name="HiveInsertExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.BroadcastHashJoinExample">
+    <configuration name="BroadcastHashJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveInsertExample" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.table.join.strategy.BroadcastHashJoinExample" />
       <module name="spark-example-3.5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.example.sql.source.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveReadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveReadExample" />
-      <module name="spark-example-3.5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.example.sql.source.*" />
+          <option name="PATTERN" value="com.spark.example.table.join.strategy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,6 +158,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShuffleSortMergeJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.table.join.strategy.ShuffleSortMergeJoinExample" />
+      <module name="spark-example-3.5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.example.table.join.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="spark-3.5" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -206,20 +209,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.BroadcastHashJoinExample" />
+      <item itemvalue="Application.ShuffleSortMergeJoinExample" />
       <item itemvalue="Application.InnerJoinScalaExample" />
       <item itemvalue="Application.SeqToDFByCreateDataFrameScalaExample" />
       <item itemvalue="Application.SeqToDataFrameScalaExample" />
-      <item itemvalue="Application.HiveInsertExample" />
-      <item itemvalue="Application.HiveReadExample" />
       <item itemvalue="Maven.spark-3.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BroadcastHashJoinExample" />
+        <item itemvalue="Application.ShuffleSortMergeJoinExample" />
         <item itemvalue="Application.InnerJoinScalaExample" />
         <item itemvalue="Application.SeqToDFByCreateDataFrameScalaExample" />
         <item itemvalue="Application.SeqToDataFrameScalaExample" />
-        <item itemvalue="Application.HiveInsertExample" />
-        <item itemvalue="Application.HiveReadExample" />
       </list>
     </recent_temporary>
   </component>

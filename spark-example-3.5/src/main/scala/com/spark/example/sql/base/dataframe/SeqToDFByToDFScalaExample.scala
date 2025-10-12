@@ -1,11 +1,11 @@
-package com.spark.example.sql.base
+package com.spark.example.sql.base.dataframe
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 /**
- * 从集合创建 DataFrame
+ * 从集合创建 DataFrame 通过 toDF 方法
  */
-object SeqToDataFrameScalaExample {
+object SeqToDFByToDFScalaExample {
 
   case class Employees(id: Int, name: String, age: Int, sex: String)
 

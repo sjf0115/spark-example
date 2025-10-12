@@ -1,4 +1,4 @@
-package com.spark.example.sql.join
+package com.spark.example.table.join
 
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession

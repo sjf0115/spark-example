@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/types/InnerJoinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/HiveInsertExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/types/InnerJoinScalaExample.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/base/SeqToDataFrameScalaExample.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/AutoBroadcastJoinExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/strategy/AutoBroadcastJoinExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/hive-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/types/InnerJoinScalaExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/types/InnerJoinScalaExample.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +56,7 @@
     "Application.HiveInsertExample.executor": "Run",
     "Application.HiveReadExample.executor": "Run",
     "Application.HiveWriteExample.executor": "Run",
+    "Application.SeqToDataFrameScalaExample.executor": "Run",
     "Application.SparkSessionExample.executor": "Run",
     "Application.TextFilesExample.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -94,7 +92,7 @@
       <recent name="com.spark.example.sql.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HiveInsertExample">
+  <component name="RunManager" selected="Application.SeqToDataFrameScalaExample">
     <configuration name="AutoBroadcastJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.join.strategy.AutoBroadcastJoinExample" />
@@ -151,13 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HiveWriteExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SeqToDataFrameScalaExample" type="Application" factoryName="Application" temporary="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveWriteExample" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.base.SeqToDataFrameScalaExample" />
       <module name="spark-example-3.5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.example.sql.source.*" />
+          <option name="PATTERN" value="com.spark.example.sql.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,20 +200,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.SeqToDataFrameScalaExample" />
       <item itemvalue="Application.HiveInsertExample" />
       <item itemvalue="Application.AutoBroadcastJoinExample" />
       <item itemvalue="Application.HiveDataSetExample" />
-      <item itemvalue="Application.HiveWriteExample" />
       <item itemvalue="Application.HiveReadExample" />
       <item itemvalue="Maven.spark-3.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeqToDataFrameScalaExample" />
         <item itemvalue="Application.HiveInsertExample" />
         <item itemvalue="Application.HiveReadExample" />
         <item itemvalue="Application.AutoBroadcastJoinExample" />
         <item itemvalue="Application.HiveDataSetExample" />
-        <item itemvalue="Application.HiveWriteExample" />
       </list>
     </recent_temporary>
   </component>

@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a6757b-977a-4dab-b11e-5c9c061a36aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/HiveDataSetExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/HiveReadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/HiveWriteExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/hive-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/types/InnerJoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/source/HiveInsertExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join/types/InnerJoinScalaExample.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_compressed/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_compressed/.part-00000-52536233-71fd-4fed-a86b-c4a34114427c-c000.txt.gz.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_compressed/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/data/kv.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_compressed/part-00000-52536233-71fd-4fed-a86b-c4a34114427c-c000.txt.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-example-3.5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/AutoBroadcastJoinExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/java/com/spark/example/sql/join/strategy/AutoBroadcastJoinExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-example-3.5/src/main/resources/hive-site.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +53,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AutoBroadcastJoinExample.executor": "Run",
     "Application.HiveDataSetExample.executor": "Run",
     "Application.HiveExample.executor": "Run",
+    "Application.HiveInsertExample.executor": "Run",
+    "Application.HiveReadExample.executor": "Run",
     "Application.HiveWriteExample.executor": "Run",
     "Application.SparkSessionExample.executor": "Run",
     "Application.TextFilesExample.executor": "Run",
@@ -72,6 +70,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/smartsi/学习/Code/spark-example/spark-example-3.5/src/main/scala",
     "last_opened_file_path": "/Users/smartsi/学习/Code/spark-example/spark-example-3.5/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -86,6 +85,7 @@
       <recent name="$PROJECT_DIR$/spark-example-3.5/src/main/scala/com/spark/example/sql/join" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.spark.example.sql.join.types" />
       <recent name="com.spark.example.sql" />
       <recent name="com.spark.example" />
     </key>
@@ -94,10 +94,38 @@
       <recent name="com.spark.example.sql.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HiveDataSetExample">
+  <component name="RunManager" selected="Application.HiveInsertExample">
+    <configuration name="AutoBroadcastJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.join.strategy.AutoBroadcastJoinExample" />
+      <module name="spark-example-3.5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.example.sql.join.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HiveDataSetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveDataSetExample" />
+      <module name="spark-example-3.5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.example.sql.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HiveInsertExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveInsertExample" />
       <module name="spark-example-3.5" />
       <extension name="coverage">
         <pattern>
@@ -126,34 +154,6 @@
     <configuration name="HiveWriteExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.HiveWriteExample" />
-      <module name="spark-example-3.5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.example.sql.source.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparkSessionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.base.SparkSessionExample" />
-      <module name="spark-example-3.5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.example.sql.base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextFilesExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.example.sql.source.TextFilesExample" />
       <module name="spark-example-3.5" />
       <extension name="coverage">
         <pattern>
@@ -202,20 +202,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.HiveInsertExample" />
+      <item itemvalue="Application.AutoBroadcastJoinExample" />
       <item itemvalue="Application.HiveDataSetExample" />
       <item itemvalue="Application.HiveWriteExample" />
       <item itemvalue="Application.HiveReadExample" />
-      <item itemvalue="Application.TextFilesExample" />
-      <item itemvalue="Application.SparkSessionExample" />
       <item itemvalue="Maven.spark-3.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HiveInsertExample" />
+        <item itemvalue="Application.HiveReadExample" />
+        <item itemvalue="Application.AutoBroadcastJoinExample" />
         <item itemvalue="Application.HiveDataSetExample" />
         <item itemvalue="Application.HiveWriteExample" />
-        <item itemvalue="Application.HiveReadExample" />
-        <item itemvalue="Application.TextFilesExample" />
-        <item itemvalue="Application.SparkSessionExample" />
       </list>
     </recent_temporary>
   </component>
